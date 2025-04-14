@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4 section Webpage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #89f7fe, #66a6ff);
+    padding: 40px 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .section {
+    text-align: center;
+    width: 20%;
+    min-width: 150px;
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #f8f8f8;
+  }
+  
+  .section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  .section i {
+    font-size: 60px;
+    color: #3498db;
+    margin-bottom: 15px;
+  }
+  
+  .section h2 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  .section h2 a:hover {
+    color: #007BFF;
+  }
+  
+
+   </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="section">
+      <i class="fas fa-home"></i>
+      <h2><a href="#home">Home</a></h2>
+    </div>
+
+    <div class="section">
+      <i class="fas fa-user"></i>
+      <h2><a href="#about">About</a></h2>
+    </div>
+
+    <div class="section">
+      <i class="fas fa-image"></i>
+      <h2><a href="#gallery">Gallery</a></h2>
+    </div>
+
+    <div class="section">
+      <i class="fas fa-envelope"></i>
+      <h2><a href="#contact">Contact</a></h2>
+    </div>
+  </div>
+
+</body>
+</html>
